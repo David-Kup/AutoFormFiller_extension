@@ -1,0 +1,132 @@
+.ce_main1 {
+    width: 420px;
+    /* height: 400px; */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; */
+    position: absolute;
+    z-index: 999999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: white;
+    background-color: #4e4b4b;
+    opacity: 0.9; 
+}
+.flex_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    margin: 20px;
+}
+.block_container{
+    display: block;
+}
+.invis{
+    visibility: hidden;
+}
+
+.displayNone{
+    display: none;
+}
+
+.myformtitle{
+    color: #3786ee;
+    margin: 0px;
+    font-size: 35px;
+}
+
+.displayNone{
+    display: none;
+}
+.selectExcel{
+    text-align: center;
+    float: left;
+    width: 80%;
+    font-size: 17px;
+    border-style: solid;
+    border-width: 2px;
+    padding: 10px;
+    margin-left: 7.5%;
+  }
+.centerText{
+    text-align: center;
+    text-transform:uppercase;
+}
+#btn1{
+    width: 100%;
+    cursor: pointer;
+    background-color: #f1a8a8;
+    color: #3786ee;
+    font-size: 36px;
+    font-weight: 400;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+#btn:hover{
+    background-color: #947878;
+}
+#edit{
+    cursor: pointer;
+    margin: 0px;
+    font-size: 35px;
+    color: white;
+}
+#exit{
+    float: right;
+    font-size: 40px;
+    color: red;
+    cursor: pointer;
+    font-weight: 500;
+}
+input{
+    font-size: 15px !important;
+    color: black !important;
+}
+.answerDiv{
+    height: 200px;
+}
+.browse{
+    height: 44px;
+}
+.addedRule{
+    text-align: center;
+    color: red;
+    margin-top: -10px;
+}
+.success{
+    text-align: center;
+    color: green;
+}
+.modifycheck{
+    margin-left: 7%;
+}
+
+#staticText{
+    width: 210px;
+}
+#btn-group-brandsOne
+{
+    width: 198px !important;
+    margin-left: -7px;
+    
+}
+#presetList{
+
+    font-size: 20px ;
+    color: black !important;
+}
+#addPreset{
+    width: 150px;
+    margin-left: 62px;
+}
+#presetBtn{
+    height: 34px;
+}
+.vsb-menu ul li{
+    margin-top: 10px;
+}

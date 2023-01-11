@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./vanillaSelectBox.css">
+    <title>Document</title>
+    <style>
+        body {
+            width: 280px;
+            margin: 0px;
+            /* display: flex;
+            flex-direction: column;
+            align-items: center; */
+
+        }
+        .title{
+            font-size: 15px;
+        }
+        .set, .set1{
+            
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+        .unset, .unset1{
+            height: 220px;
+            display: flex; justify-content: center; align-items: center;
+        }
+        #prev, #next{
+            cursor: pointer;
+            padding: 15px;
+            border-style: solid;
+            padding-left: 20px;
+            padding-right: 20px;
+            font-size: 20px;
+            
+        }
+        
+        #fill, #useprofile{
+            border-style: solid;
+            padding: 15px;
+            padding-left: 20px;
+            padding-right: 20px;
+            font-size: 20px;
+        }
+        label{
+            text-align: end;
+            width: 85px;
+        }
+
+        #url, #excel, #curRow{
+            width: 150px;
+            text-align: center;
+        }
+        .vsb-menu{
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="display: flex; justify-content: center; align-items: center; background-color: #706060; padding: 5px; color: white; height: 30px;">
+        <div class="title">
+            Control Row for Dynamic Answer
+        </div>
+    </div>
+    <div class="set">
+        <div style="color: red; text-align: center; margin-top: 10px; font-size: 27px;">Dynamic Answer Rule is setted!!!</div>
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 30px;">
+            <label for="curRow">Url :&nbsp;&nbsp;</label>
+            <input type="text" readonly id="url">
+        </div>
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 30px;">
+            <label for="curRow">Excelfile :&nbsp;&nbsp;</label>
+            <input type="text" readonly id="excel">
+        </div>
+        <div id = "excelfile" style="text-align: center; margin-top: 10px;"></div>
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 30px;">
+            <label for="curRow">Current Row :&nbsp;&nbsp;</label>
+            <input type="number" id="curRow">
+        </div>
+        <div style="display: flex; justify-content: space-around; align-items: center; margin-top: 30px; margin-bottom: 20px; ">
+            <input type="button" id="prev" value="<">
+            <input type="button" id="fill" value="Change">
+            <input type="button" id="next" value=">">
+        </div>
+        
+    </div>
+    <div class="unset">
+        <div style="color: red; text-align: center; margin-top: 10px; font-size: 27px;">No Dynamic Answer Rule is setted!!!</div>
+    </div>
+    <div style="display: flex; justify-content: center; align-items: center; background-color: #706060; padding: 5px; color: white; height: 30px;">
+        <div class="title">
+            Control Profile
+        </div>
+    </div>
+    <div class="set1">
+        <div style="color: red; text-align: center; margin-top: 10px; font-size: 27px;">Profile Exist for this page!!!</div>
+        <div style="display: flex; justify-content: space-around; align-items: center; margin-top: 30px;">		
+            <label>Profile :&nbsp;&nbsp;</label><select id="brandsOne"></select> 
+        </div>
+        <div style="display: flex; justify-content: center; align-items: center; margin-top: 30px; margin-bottom: 20px; ">
+            <input type="button" id="useprofile" value="Use this profile">
+        </div>
+        
+    </div>
+    <div class="unset1">
+        <div style="color: red; text-align: center; margin-top: 10px; font-size: 27px;">No Profile Exist in this page!!!</div>
+    </div>
+    <script src="./vanillaSelectBox.js"></script>
+    <script src="./popup_script.js"></script>
+
+    
+</body>
+
+</html>
